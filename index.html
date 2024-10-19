@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Tracker Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Real-Time Stock Tracker Dashboard</h1>
+
+    <!-- Search Section -->
+    <div class="search">
+      <input type="text" id="stock-symbol" placeholder="Enter stock symbol (e.g., AAPL)" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Dropdown Section -->
+    <div class="dropdown">
+      <label for="trending-stocks">Select Trending Stock:</label>
+      <select id="trending-stocks">
+        <option value="" disabled selected>Select a stock</option>
+      </select>
+    </div>
+
+    <!-- Stock Details Section -->
+    <div id="stock-details" class="stock-details">
+      <h3>Stock Details</h3>
+      <p>Select a stock or search to view details.</p>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-container">
+      <canvas id="stockChart"></canvas>
+    </div>
+
+    <!-- Comparison Table Section -->
+    <table id="comparison-table">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Link to JavaScript File -->
+  <script src="app.js" defer></script>
+</body>
+</html>
