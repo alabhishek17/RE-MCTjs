@@ -34,8 +34,8 @@ A responsive **Stock Tracker Dashboard** that enables users to view real-time st
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/stock-tracker-dashboard.git
-   cd stock-tracker-dashboard
+   git clone https://github.com/alabhishek17/RE-MCTjs
+   
 
 
 ## 📝 Usage
